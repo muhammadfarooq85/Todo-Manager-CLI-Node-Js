@@ -1,0 +1,31 @@
+{
+  "name": "todo-manager-cli-node-js",
+  "version": "0.1.0",
+  "description": "Todo-manager-with-cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "todo": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammadfarooq85/Todo-Manager-CLI-Node-Js.git"
+  },
+  "keywords": [
+    "node-js",
+    "javascript"
+  ],
+  "author": "M. Farooq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhammadfarooq85/Todo-Manager-CLI-Node-Js/issues"
+  },
+  "homepage": "https://github.com/muhammadfarooq85/Todo-Manager-CLI-Node-Js#readme",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "inquirer": "^12.6.3"
+  }
+}
