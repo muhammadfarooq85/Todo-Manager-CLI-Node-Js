@@ -1,9 +1,14 @@
 const fs = require('fs');
 const chalk = require('chalk').default;
 const inquirer = require('inquirer').default;
-const ora = require("ora").default;
+const ora = require('ora').default;
+const figlet = require('figlet');
 
 const FILE = 'todo.json';
+
+console.log(
+    chalk.yellow(figlet.textSync("TODO CLI", { horizontalLayout: "full" }))
+);
 
 function loadTasks() {
     if (!fs.existsSync(FILE)) return [];
@@ -115,9 +120,9 @@ async function main() {
                     await deleteTask();
                     break;
                 case 'exit':
-                    const spinner = ora('Exiting...').start();
-                    await new Promise(resolve => setTimeout(resolve, 3000));
-                    spinner.succeed(chalk.yellow('Goodbye!'));
+                    console.log(
+                        chalk.yellow(figlet.textSync("GOODBYE!", { horizontalLayout: "full" }))
+                    );
                     exit = true;
                     break;
             }
